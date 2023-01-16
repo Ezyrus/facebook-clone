@@ -1,0 +1,406 @@
+* {
+  padding: 0;
+  margin: 0;
+  box-sizing: border-box;
+}
+
+body {
+  color: #1c1e21;
+  direction: ltr;
+  line-height: 1.34;
+  margin: 0;
+  padding: 0;
+  unicode-bidi: embed;
+}
+
+section.main-content {
+  background-color: #f0f2f5;
+  width: 100%;
+  height: 76.7vh;
+  display: flex;
+  flex-direction: row;
+}
+
+section.main-content .accounts {
+  width: 54%;
+  height: 100%;
+  display: flex;
+  justify-content: end;
+  align-items: center;
+}
+
+section.main-content .accounts .list-accounts {
+  display: flex;
+  justify-content: start;
+  align-items: start;
+  flex-direction: column;
+  height: 100%;
+  width: 55.2%;
+  margin-top: 159px;
+}
+
+section.main-content .accounts .list-accounts img {
+  height: 70px;
+}
+
+section.main-content .accounts .list-accounts h2 {
+  font-family: Helvetica, Arial, sans-serif;
+  font-size: 28px;
+  font-weight: normal;
+  line-height: 32px;
+  text-indent: 19px;
+}
+
+section.main-content .accounts .list-accounts h5 {
+  color: #606770;
+  font-family: Helvetica, Arial, sans-serif;
+  font-weight: normal;
+  font-size: 15px;
+  line-height: 24px;
+  margin-bottom: 24px;
+  text-indent: 19px;
+}
+
+section.main-content .accounts .list-accounts .user-accounts {
+  width: 100%;
+  height: 207px;
+  display: flex;
+  flex-direction: row;
+}
+
+section.main-content .accounts .list-accounts .user-accounts .account {
+  margin-left: 20px;
+  width: 161px;
+  border-radius: 8px;
+  display: flex;
+  flex-direction: column;
+  justify-content: end;
+  align-items: center;
+  border: 1px solid #dddfe2;
+}
+
+section.main-content .accounts .list-accounts .user-accounts .account:hover {
+  box-shadow: 0px 0px 15px #cfcfcf;
+  cursor: pointer;
+  transition: 0.2s;
+}
+
+section.main-content .accounts .list-accounts .user-accounts .one {
+  background-image: url(/user.jpg);
+  background-position: start;
+  background-repeat: no-repeat;
+  background-size: contain;
+  display: flex;
+  flex-direction: column;
+  justify-content: space-between;
+}
+
+section.main-content .accounts .list-accounts .user-accounts .one .to-remove {
+  background-image: url(/removee.png);
+  background-position: start;
+  background-repeat: no-repeat;
+  background-size: contain;
+  width: 100%;
+  height: 16px;
+  margin-top: 4px;
+  margin-left: 8px;
+}
+
+section.main-content .accounts .list-accounts .user-accounts .account .name {
+  background-color: white;
+  width: 100%;
+  height: 22%;
+  display: flex;
+  align-items: center;
+  justify-content: center;
+  border-radius: 0px 0px 10px 10px;
+}
+
+section.main-content .accounts .list-accounts .user-accounts .add {
+  margin-left: 17px;
+  background-color: #f5f6f7;
+  background-image: url(/addd.png);
+  background-position: center;
+  background-repeat: no-repeat;
+  background-size: 42px;
+  background-position-x: 59px;
+  background-position-y: 58px;
+  display: flex;
+}
+
+section.main-content .accounts .list-accounts .user-accounts .account .name h3 {
+  font-family: Helvetica, Arial, sans-serif;
+  font-weight: normal;
+  text-align: center;
+  color: #4b4f56;
+  font-size: 18px;
+}
+
+section.main-content .accounts .list-accounts .user-accounts .add .name h3 {
+  color: #327aee;
+}
+
+section.main-content .login {
+  width: 51%;
+  height: 100%;
+  display: flex;
+  justify-content: start;
+  flex-direction: row;
+}
+
+section.main-content .login .form-container {
+  width: 55%;
+  height: 100%;
+  display: flex;
+  flex-direction: column;
+  gap: 27px;
+  justify-content: start;
+  align-items: center;
+}
+
+section.main-content .login .form-container form {
+  background-color: white;
+  border: 0px solid gray;
+  border-radius: 8px;
+  margin-top: 131.2px;
+  width: 77%;
+  height: 48.7%;
+  display: flex;
+  gap: 5px;
+  flex-direction: column;
+  justify-content: space-between;
+  align-items: center;
+
+  box-shadow: 0px 8px 15px #cfcfcf;
+}
+
+/* section.main-content .login .form-container form >* {
+    margin: 3.5px;
+} */
+
+section.main-content .login .form-container form input {
+  font-family: Helvetica, Arial, sans-serif;
+  line-height: 16px;
+  margin-top: 15px;
+  letter-spacing: 0.5px;
+
+  height: 14.5%;
+  width: 92%;
+  padding: 5px;
+  text-indent: 10px;
+  border: 1px solid #dddfe2;
+  border-radius: 5px;
+  font-size: 16px;
+  font-weight: normal;
+}
+
+section.main-content .login .form-container form input:focus {
+  outline: 1px solid #1b74e4;
+}
+
+section.main-content .login .form-container form input:nth-child(2) {
+  margin-top: -5px;
+}
+
+section.main-content .login .form-container form a {
+  font-family: Helvetica, sans-serif;
+  font-size: 13px;
+  word-wrap: break-word;
+  font-family: none;
+  padding: 2px;
+  text-decoration: none;
+  color: #002efd;
+}
+
+section.main-content .login .form-container form a:hover {
+  text-decoration: underline;
+}
+
+section.main-content .login .form-container form button {
+  cursor: pointer;
+  width: 92%;
+  border: none;
+  color: white;
+  font-size: 20px;
+  background-color: #147aee;
+  border-radius: 6px;
+  padding: 0px 16px;
+  height: 13.5%;
+  font-weight: 600;
+}
+
+section.main-content .login .form-container form button:hover {
+  background-color: #0c6ad4;
+  transition: 0.5s;
+}
+
+section.main-content .login .form-container form .create-account {
+  width: 90%;
+  border-top: 1px solid #dddfe2;
+  height: 27.4%;
+  display: flex;
+  justify-content: center;
+  align-items: center;
+}
+
+section.main-content .login .form-container form .create-account button {
+  border: none;
+  color: white;
+  border-radius: 6px;
+  height: 53%;
+  width: 53%;
+  font-size: 16.5px;
+  padding: 0px;
+  font-weight: bold;
+  background-color: #4bb63c;
+}
+
+section.main-content .login .form-container form .create-account button:hover {
+  background-color: #369729;
+  transition: 0.5s;
+}
+
+section.main-content .login .form-container h5 {
+  font-size: 14px;
+  font-weight: normal;
+  font-family: Helvetica, sans-serif;
+}
+
+section.main-content .login .form-container h5 span {
+  font-weight: bolder;
+  font-family: Helvetica, sans-serif;
+}
+
+section.main-content .login .form-container h5 span:hover {
+  text-decoration: underline;
+  cursor: pointer;
+}
+
+section.footer {
+  background-color: white;
+  width: 100%;
+  display: flex;
+  justify-content: center;
+}
+
+section.footer .content-container {
+  height: 100%;
+  width: 51.8%;
+}
+
+section.footer .content-container .locale {
+    margin-top: 28px;
+  width: 100%;
+padding-bottom: 8px;
+  border-bottom: 1px solid #dddfe2;
+}
+
+section.footer .content-container .locale ul {
+  list-style-type: none;
+  display: flex;
+  flex-wrap: wrap;
+  align-items: center;
+}
+
+section.footer .content-container .locale ul li {
+    margin-right: 10px;
+  font-size: 12px;
+  font-family: Helvetica, sans-serif;
+  cursor: pointer;
+  color: #768588;
+
+  display: flex;
+  align-items: center;
+}
+
+section.footer .content-container .locale ul li button{
+  height: 20px;
+  width: 30px;
+  background-color: #f5f6f7;
+  border: 1px solid #ccd0d5;
+  border-radius: 3px;
+
+  cursor: pointer;
+  display: flex;
+  align-items: center;
+  justify-content: center;
+}
+
+section.footer .content-container .locale ul li img{
+  height: 10px
+}
+
+section.footer .content-container .others-01 {
+  margin-top: 9px;
+width: 100%;
+}
+
+section.footer .content-container .others-02, section.footer .content-container .others-03 {
+  margin-top: 3px;
+width: 100%;
+}
+
+section.footer .content-container .others-04 {
+  margin-top: 23px;
+width: 100%;
+
+}
+
+section.footer .content-container .others ul {
+list-style-type: none;
+display: flex;
+flex-wrap: wrap;
+align-items: center;
+}
+
+section.footer .content-container .others ul li {
+  margin-right: 20px;
+font-size: 12px;
+font-family: Helvetica, sans-serif;
+cursor: pointer;
+color: #768588;
+display: flex;
+align-items: center;
+}
+
+section.footer .content-container .others-04 ul li {
+font-size: 11px;
+}
+
+section.footer .content-container .others ul li:hover {
+text-decoration: underline;
+cursor: pointer;
+}
+
+section.footer .content-container .locale ul li:first-child:hover {
+  text-decoration: none;
+  cursor: text;
+  }
+
+  section.footer .content-container .locale ul li:hover {
+    text-decoration: underline;
+    cursor: pointer;
+    }
+
+section.footer .content-container .others-04 ul li:hover {
+  text-decoration: none;
+  cursor: text;
+  }
+
+
+section.footer .content-container .others ul li button{
+height: 20px;
+width: 30px;
+background-color: #f5f6f7;
+border: 1px solid #ccd0d5;
+border-radius: 3px;
+cursor: pointer;
+display: flex;
+align-items: center;
+justify-content: center;
+}
+
+section.footer .content-container .others ul li img{
+height: 13.5px;
+padding-left: 2px;
+}
